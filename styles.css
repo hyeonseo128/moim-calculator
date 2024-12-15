@@ -1,0 +1,48 @@
+.split-container {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+  }
+  
+  .split-cell {
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: text;
+    color: #aaa;
+  }
+  
+  .split-cell:last-child {
+    border-bottom: none;
+  }
+  
+  .split-cell[contenteditable="true"]:focus {
+    outline: none;
+    color: #333;
+  }
+  
+  .total {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+    cursor: not-allowed;
+  }
+  
+  .extra-amount {
+    background-color: #e8e8e8;
+    color: #555;
+    font-weight: bold;
+    cursor: not-allowed;
+  }
+  
+  .extra-amount.negative {
+    background-color: #fffb00 !important;
+  }
+  
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
